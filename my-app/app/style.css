@@ -1,0 +1,79 @@
+/* Murphy's Bar & Grill */
+:root {
+  --murphys-green: #004030;
+}
+
+body {
+  margin: 0;
+  background-color: var(--murphys-green);
+  color: #fff;
+}
+
+/* ---------- Menu ---------- */
+.menu-bar {
+  background-color: var(--murphys-green);
+  padding: 1.25rem 2rem;
+}
+
+.brand-logo {
+  height: 100px;
+  width: auto;
+}
+
+.menu-bar .nav-link {
+  color: #fff;
+  font-size: 1.15rem;
+  padding: 0.5rem 1rem;
+}
+
+.menu-bar .nav-link:hover,
+.menu-bar .nav-link:focus {
+  color: #0d6efd;
+}
+
+/* ---------- Background image with overlay text ---------- */
+.murphys-background {
+  background-image: url("http://courses.ics.hawaii.edu/ics314f25/morea/ui-frameworks/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.6;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- Footer ---------- */
+.murphys-footer {
+  background-color: var(--murphys-green);
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.murphys-footer h5 {
+  font-weight: 400;
+}
+
+.murphys-footer hr {
+  border-color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+  margin: 0.75rem 0 1.5rem;
+}
+
+.murphys-footer p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .hero-text { font-size: 1.5rem; }
+  .brand-logo { height: 70px; }
+}
